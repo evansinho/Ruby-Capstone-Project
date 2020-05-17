@@ -12,6 +12,6 @@ module ClassCount
     file.lines.each { |l| lines_with_class << l.number if pat.match?(l.content) }
     size = lines_with_class.count
 
-    puts "#{lines_with_class}, Error: #{lines_with_class.count} classes defined in a module" if size.positive?
+    puts "#{lines_with_class}, Error: #{lines_with_class.count} classes defined in a module".red if size > 1
   end
 end

@@ -16,7 +16,7 @@ module ClassName
     size = bad_class_name_lines.length
 
     if size.positive? # rubocop:todo Style/GuardClause
-      puts "#{bad_class_name_lines}: NamingError: Ensure classes begin with Uppercase and is not snake Cased"
+      puts "#{bad_class_name_lines}: NamingError: Ensure classes begin with Uppercase and is not snake Cased".red
     end
   end
 end

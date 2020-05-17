@@ -19,6 +19,6 @@ module VarNaming
     end
     size = bad_lines.count
 
-    puts "#{bad_lines}, VariableName Error: Uppercase|Numbers used to Start a Variable name." if size.positive?
+    puts "#{bad_lines}, VariableName Error: Uppercase/Numbers used to Start a Variable name.".red if size.positive?
   end
 end

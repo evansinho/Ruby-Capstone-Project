@@ -20,7 +20,7 @@ module SpaceChecker
     file.lines.each { |line| lines_with_spaces << line.number if found_spaces(line.content) }
     size = lines_with_spaces.count
 
-    state = puts "#{lines_with_spaces}: SpacingError: Redundant Space(s) found" if size.positive?
+    state = puts "#{lines_with_spaces}: SpacingError: Redundant Space(s) found".red if size.positive?
     # rubocop:enable Lint/UselessAssignment
   end
 end
