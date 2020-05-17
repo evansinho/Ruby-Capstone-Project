@@ -18,7 +18,7 @@ A JavaScript linter built with Ruby
 
 ## Screenshot of code output
 
-(/snapshot.PNG)
+[snapshot](/snapshot.PNG)
 
 ## ERRORS that can currently be detected include
 
