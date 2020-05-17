@@ -12,7 +12,7 @@ class LoadFile
 
     all_lines = content.readlines.map(&:chomp)
     init_lines = lambda { |val, index|
-      line = Line.new(index + 1, val, @filename)
+      line = Line.new(index + 1, val, @file)
       @lines << line
     }
     all_lines.each_with_index(&init_lines)
