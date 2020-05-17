@@ -1,5 +1,5 @@
 module SpaceChecker
-  def self.lint_files(err, file)
+  def self.spaces(err, file)
     space_check = check_spaces(file)
     err << space_check if space_check
     err

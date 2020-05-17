@@ -4,6 +4,7 @@ require './lib/load_file.rb'
 require './lib/space_checker.rb'
 require './lib/class_name.rb'
 require './lib/class_count.rb'
+require './lib/var_naming.rb'
 
 path = ARGV[0]
 errors = ''
@@ -14,9 +15,10 @@ end
 
 def linter(given_file, errors)
   new_file = LoadFile.new(given_file)
-  SpaceChecker.lint_files(errors, new_file)
-  ClassName.lint_files(errors, new_file)
-  ClassCount.lint_files(errors, new_file)
+  SpaceChecker.spaces(errors, new_file)
+  ClassName.class_naming(errors, new_file)
+  ClassCount.class_count(errors, new_file)
+  VarNaming.var_name_checker(errors, new_file)
   read_lambda = ->(l) { errors = call_error(errors, l) if errors }
   new_file.lines.each(&read_lambda)
 end

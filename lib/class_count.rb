@@ -1,5 +1,5 @@
 module ClassCount
-  def self.lint_files(err, file)
+  def self.class_count(err, file)
     result = check_class_number(file)
     err << result if result
     err

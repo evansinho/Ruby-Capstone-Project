@@ -1,5 +1,5 @@
 module ClassName
-  def self.lint_files(err, file)
+  def self.class_naming(err, file)
     name_check_err = check_class_name(file)
     err << name_check_err if name_check_err
     err
