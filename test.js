@@ -1,2 +1,1 @@
-console.log
-const var = name
+const name = evans
