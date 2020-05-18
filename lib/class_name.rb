@@ -6,8 +6,12 @@ module ClassName
   end
 
   def self.bad_class_name(bad)
-    pattern = /[\s]*(class)[\s]*[\s]*[[A-Z][\-]]+[a-zA-Z]+[\-]+[\w\W]*/
-    pattern.match?(bad)
+    first_pat = /[\s]*(class)[\s]*[\d]*[\-]*[a-z]+[\-]*[\w\W]*/
+    second_pat = /[\s]*(class)[\s]*[\p{Alpha}]+[\-]+[\p{Alpha}]+/
+
+    commented_line = bad.match?(%r{^\W+[\/\/]})
+
+    !commented_line && (first_pat.match?(bad) || second_pat.match?(bad))
   end
 
   def self.check_class_name(file)

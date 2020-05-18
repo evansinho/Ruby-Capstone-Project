@@ -1,7 +1,7 @@
 const name = evans
-var Rat = nkapi
+var rat = nkapi
 function book(){
 
 }
 
-class BadClass_ba {}
+class bad {}

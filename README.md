@@ -33,8 +33,8 @@ A JavaScript linter built with Ruby
 
 ### VARIABLE NAMING ERRORS
 - if capital letters or numbers are used to start a variable name, e.g
-  - `*Good practice* let 4boy = doe or const Numbercaps = 9`
-  - `*Bad practice* let| | boy = doe or var numberCaps| | = 9`
+  - `*Bad practice* let 4boy = doe or const Numbercaps = 9`
+  - `*GOOD practice* let boy = doe or var numberCaps = 9`
 
 ### CLASS NAME ERRORS
 - if class names begin with small letters and/or
