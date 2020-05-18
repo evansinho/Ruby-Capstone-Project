@@ -1,3 +1,5 @@
+require_relative './line.rb'
+
 class LoadFile
   attr_reader :file, :lines
 
@@ -16,15 +18,5 @@ class LoadFile
       @lines << line
     }
     all_lines.each_with_index(&init_lines)
-  end
-end
-
-class Line
-  attr_reader :number, :content, :filename
-
-  def initialize(number, content, filename)
-    @number = number
-    @content = content
-    @filename = filename
   end
 end
