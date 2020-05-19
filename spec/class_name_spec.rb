@@ -6,12 +6,12 @@ describe ClassName do
 
   describe 'bad_class_name method' do
     it('Should return TRUE if WRONG Class name is supplied') do
-      example = ClassName.bad_class_name(bad_class)
+      example = ClassName.bad_class_name?(bad_class)
       expect(example).to eq(true)
     end
 
     it('Should return FALSE if RIGHT Class name is supplied') do
-      example = ClassName.bad_class_name(good_class)
+      example = ClassName.bad_class_name?(good_class)
       expect(example).to eq(false)
     end
   end

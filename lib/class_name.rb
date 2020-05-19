@@ -5,7 +5,7 @@ module ClassName
     err
   end
 
-  private_class_method def self.bad_class_name?(bad)
+  def self.bad_class_name?(bad)
     first_pat = /[\s]*(class)[\s]*[\d]*[\-]*[a-z]+[\-]*[\w\W]*/
     second_pat = /[\s]*(class)[\s]*[\p{Alpha}]+[\-]+[\p{Alpha}]+/
 
@@ -14,7 +14,7 @@ module ClassName
     !commented_line && (first_pat.match?(bad) || second_pat.match?(bad))
   end
 
-  private_class_method def self.check_class_name(file)
+  def self.check_class_name(file)
     bad_class_name_lines = []
     file.lines.each { |line| bad_class_name_lines << line.number if bad_class_name?(line.content) }
     size = bad_class_name_lines.length

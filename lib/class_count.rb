@@ -5,7 +5,7 @@ module ClassCount
     err
   end
 
-  private_class_method def self.check_class_number(file)
+  def self.check_class_number(file)
     pat = /(class)/
 
     lines_with_class = []
