@@ -2,7 +2,7 @@
 A JavaScript linter built with Ruby
 
 ## Video Description
-![live video](https://www.loom.com/share/77bbaf93c61f4ed49652e6c80315cb82)
+(https://www.loom.com/share/77bbaf93c61f4ed49652e6c80315cb82)
 
 ## Built With
 
