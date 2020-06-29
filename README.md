@@ -9,11 +9,15 @@ A JavaScript linter built with Ruby
 - Ruby,
 - Vs.code,
 - Git and Github
+- Rspec
 
 ## Getting Started
 
 - clone this repository `https://github.com/evansinho/Ruby-Capstone-Project`
 - cd to the folder `Ruby-Capstone-Project`
+
+## testing
+- Use this command `Rspec` to run test
 
 ## Instructions
 
